@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" xmlns:th="http://www.thymeleaf.org">
+<title>상세 페이지</title>
+<link th:href="@{/board_css.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="main">
+	<div class="post_div">
+		<table class="post_table">
+			<tr style="height:40px">
+				<td style="width:5%; text-align:center; border:1px solid black"><b>제목</b></td>
+				<td class="post_title" th:text="${post.title}"></td>
+				<td style="width:5%; text-align:center; border:1px solid black"><b>작성일</b></td>
+				<td class="post_date" th:text="${post.reporting}">
+			</tr>
+			<tr>
+				<td style="width:5%; text-align:center; border:1px solid black"><b>내용</b></td>
+				<td colspan="3" class="post_content"><pre th:text="${post.content}"></pre></td>
+			</tr>
+		</table>
+	</div>
+	<div class="post_footer_div">
+		<div class="relation_title">
+			연관 게시글
+		</div>
+		<div class="relation_div">
+			<table>
+				<tr th:each="rp : ${rp}">
+					<td class="no" th:text="${rp.no}"></td>
+					<td class="title"><a th:href="@{/view(no=${rp.no})}" th:text="${rp.title}"></a></td>
+					<td class="date" th:text="${rp.reporting}">test2</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+</html>

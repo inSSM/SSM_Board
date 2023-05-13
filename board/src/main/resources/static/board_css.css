@@ -1,0 +1,129 @@
+@charset "EUC-KR";
+.main{
+	width:100%;
+	height:100%;
+	position:fixed;
+}
+.header{
+	height:10%;
+	background-color:;
+	border:1px solid black;
+	font-size:40px;
+	text-align:center;
+}
+
+.content{
+	height:80%;
+}
+
+.textarea, .text{
+	width:100%;
+	padding:10px;
+	font-size:16px;
+}
+
+.textarea{
+	height:600px;
+	
+}
+
+.list{
+	position:fixed;
+	width:100%;
+	border:1px solid black;
+	border-collapse:collapse;
+	border-spacing:3px;
+}
+.title_div, .date_div{
+	height:50px;
+	text-align:center;
+}
+
+.no, .no_div{
+	border:1px solid black;
+	text-align:center;
+	height:30px;
+}
+
+.title_div, .title{
+	width:88%;
+	padding-left:20px;
+	border:1px solid black;
+}
+
+.date_div, .date{
+	width:10%;
+	text-align:center;
+	border:1px solid black;
+}
+
+.footer{
+	height:10%;
+	border-top:1px dashed black;
+}
+
+.page{
+	position:absolute;
+	padding-top:20px;
+	left:47%;
+}
+
+.button{
+	position:absolute;
+	float:right;
+	left:92%;
+	padding-top:10px;
+}
+
+.post_div{
+	height:60%;
+}
+
+.post_footer_div{
+	height:40%;
+}
+
+.post_table{
+	position:fixed;
+	width:100%;	
+	border-collapse:collapse;
+	border-spacing:5px;
+}
+
+.post_title, .post_date{
+	cellpadding:10px;
+	border:1px solid black;
+}
+
+.post_title{
+	width:80%;
+	padding-left:20px;
+}
+
+.post_date{
+	text-align:center;
+}
+
+.post_content{
+	padding-left:20px;
+	padding-right:40px;
+	padding-top:20px;
+	width:80%;
+	height:830px;
+	font-size:16px;
+	border:1px solid black;
+	vertical-align:top;
+}
+
+.relation_title{
+	height:5%;
+	border:1px solid black;
+	border-top:0px;
+	font-size:20px;
+	text-align:center;
+}
+
+.relation_table{
+	border:1px solid black;
+}
+

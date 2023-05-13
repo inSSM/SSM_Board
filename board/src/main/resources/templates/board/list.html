@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>게시글 목록</title>
+<link th:href="@{/board_css.css}" rel="stylesheet"/>
+</head>
+<body>
+<div class="main">
+	<div class="header">
+		<br><b>게시글 목록</b>
+	</div>
+	<div class="content">
+		<table class="list">
+			<tr>
+				<td class="no_div">번호</td>
+				<td class="title_div">제목</td>
+				<td class="date_div">날짜</td>
+			</tr>
+			<tr th:each="list : ${list}">
+				<td class="no" th:text="${list.no}"></td>
+				<td class="title"><a th:href="@{/view(no=${list.no})}" th:text="${list.title}"></a></td>
+				<td class="date" th:text="${list.reporting}">test2</td>
+			</tr>
+		</table>
+	</div>
+	<div class="footer">
+		<div class="page">
+			<a href="#">◀</a>
+			<a href="#">1</a>
+			<a href="#">2</a>
+			<a href="#">3</a>
+			<a href="#">4</a>
+			<a href="#">5</a>
+			<a href="#">6</a>
+			<a href="#">7</a>
+			<a href="#">8</a>
+			<a href="#">9</a>
+			<a href="#">10</a>
+			<a href="#">▶</a>
+		</div>
+		<div class="button">
+			<button style="padding:10px 60px; font-size:17px" onclick="location.href='write'">글쓰기</button>
+		</div>
+	</div>
+</div>
+</body>
+</html>
